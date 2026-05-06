@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:27017/taskdb")
+mongoose.connect("mongodb+srv://janrezvkasilag_db_user:<janrez092892Aka!!!>@cluster0.mtsqrmk.mongodb.net/?appName=Cluster0")
 
 // ACTIVE TASKS
 app.get("/tasks", (req, res) => {
