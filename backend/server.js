@@ -7,6 +7,12 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+const cors = require('cors');
+
+app.use(cors({
+  origin: "https://your-frontend.vercel.app"
+}));
+
 mongoose.connect("mongodb+srv://janrezvkasilag_db_user:<janrez092892Aka!!!>@cluster0.mtsqrmk.mongodb.net/?appName=Cluster0")
 
 // ACTIVE TASKS
